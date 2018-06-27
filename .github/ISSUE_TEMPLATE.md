@@ -2,7 +2,7 @@
 We will close this issue if you don't provide the needed information.
 
 Please remember, the github issues is __NOT__ for support requests and general questions. It is for bugs and feature requests only.
-Please read https://github.com/akveo/kittenTricks/blob/master/CONTRIBUTING.md and search
+Please read https://github.com/tpphu/kittenTricks/blob/master/CONTRIBUTING.md and search
 existing issues (both open and closed) prior to opening any new issue and ensure you follow the instructions therein.
 -->
 

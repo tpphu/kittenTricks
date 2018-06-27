@@ -201,8 +201,8 @@ The rest of the commit message is then used for this.
 
 [coc]: CODE_OF_CONDUCT.md
 [dev-doc]: DEV_DOCS.md
-[github]: https://github.com/akveo/kittenTricks
+[github]: https://github.com/tpphu/kittenTricks
 [stackoverflow]: https://stackoverflow.com/questions/tagged/kittenTricks
-[issues]: https://github.com/akveo/kittenTricks/issues
-[new_issue]: https://github.com/akveo/kittenTricks/issues/new
-[pulls]: https://github.com/akveo/kittenTricks/pulls
+[issues]: https://github.com/tpphu/kittenTricks/issues
+[new_issue]: https://github.com/tpphu/kittenTricks/issues/new
+[pulls]: https://github.com/tpphu/kittenTricks/pulls

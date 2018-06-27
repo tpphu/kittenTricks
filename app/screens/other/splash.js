@@ -10,12 +10,12 @@ import {
   RkText,
   RkTheme
 } from 'react-native-ui-kitten'
-import {ProgressBar} from '../../components';
+import { ProgressBar } from '../../components';
 import {
   KittenTheme
 } from '../../config/theme';
-import {NavigationActions} from 'react-navigation';
-import {scale, scaleModerate, scaleVertical} from '../../utils/scale';
+import { NavigationActions } from 'react-navigation';
+import { scale, scaleModerate, scaleVertical } from '../../utils/scale';
 
 let timeFrame = 500;
 
@@ -39,7 +39,7 @@ export class SplashScreen extends React.Component {
           StatusBar.setHidden(false, 'slide');
           let toHome = NavigationActions.reset({
             index: 0,
-            actions: [NavigationActions.navigate({routeName: 'Home'})]
+            actions: [NavigationActions.navigate({ routeName: 'Home' })]
           });
           this.props.navigation.dispatch(toHome)
         }, timeFrame);
@@ -49,7 +49,7 @@ export class SplashScreen extends React.Component {
         if (progress > 1) {
           progress = 1;
         }
-        this.setState({progress});
+        this.setState({ progress });
       }
     }, timeFrame)
 
@@ -60,16 +60,16 @@ export class SplashScreen extends React.Component {
     return (
       <View style={styles.container}>
         <View>
-          <Image style={[styles.image, {width}]} source={require('../../assets/images/splashBack.png')}/>
+          <Image style={[styles.image, { width }]} source={require('../../assets/images/splashBack.png')} />
           <View style={styles.text}>
             <RkText rkType='light' style={styles.hero}>React Native</RkText>
-            <RkText rkType='logo' style={styles.appName}>UI Kitten</RkText>
+            <RkText rkType='logo' style={styles.appName}>Tro Ly 247</RkText>
           </View>
         </View>
         <ProgressBar
           color={RkTheme.current.colors.accent}
           style={styles.progress}
-          progress={this.state.progress} width={scale(320)}/>
+          progress={this.state.progress} width={scale(320)} />
       </View>
     )
   }

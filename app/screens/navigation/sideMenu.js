@@ -7,14 +7,14 @@ import {
   Platform,
   StyleSheet
 } from 'react-native';
-import {NavigationActions} from 'react-navigation';
+import { NavigationActions } from 'react-navigation';
 import {
   RkStyleSheet,
   RkText,
   RkTheme
 } from 'react-native-ui-kitten';
-import {MainRoutes} from '../../config/navigation/routes';
-import {FontAwesome} from '../../assets/icons';
+import { MainRoutes } from '../../config/navigation/routes';
+import { FontAwesome } from '../../assets/icons';
 
 export class SideMenu extends React.Component {
 
@@ -27,7 +27,7 @@ export class SideMenu extends React.Component {
     let resetAction = NavigationActions.reset({
       index: 0,
       actions: [
-        NavigationActions.navigate({routeName: route.id})
+        NavigationActions.navigate({ routeName: route.id })
       ]
     });
     this.props.navigation.dispatch(resetAction)
@@ -35,8 +35,8 @@ export class SideMenu extends React.Component {
 
   _renderIcon() {
     if (RkTheme.current.name === 'light')
-      return <Image style={styles.icon} source={require('../../assets/images/smallLogo.png')}/>;
-    return <Image style={styles.icon} source={require('../../assets/images/smallLogoDark.png')}/>
+      return <Image style={styles.icon} source={require('../../assets/images/smallLogo.png')} />;
+    return <Image style={styles.icon} source={require('../../assets/images/smallLogoDark.png')} />
 
   }
 
@@ -52,7 +52,7 @@ export class SideMenu extends React.Component {
           <View style={styles.content}>
             <View style={styles.content}>
               <RkText style={styles.icon}
-                      rkType='moon primary xlarge'>{route.icon}</RkText>
+                rkType='moon primary xlarge'>{route.icon}</RkText>
               <RkText>{route.title}</RkText>
             </View>
             <RkText rkType='awesome secondaryColor small'>{FontAwesome.chevronRight}</RkText>
@@ -67,7 +67,7 @@ export class SideMenu extends React.Component {
           showsVerticalScrollIndicator={false}>
           <View style={[styles.container, styles.content]}>
             {this._renderIcon()}
-            <RkText rkType='logo'>UI Kitten</RkText>
+            <RkText rkType='logo'>Tro Ly 247</RkText>
           </View>
           {menu}
         </ScrollView>
